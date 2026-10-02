@@ -85,10 +85,16 @@ pip install -r requirements.txt
 
 ### Настройка переменных окружения
 
-Скопируйте шаблон `.env.example` в `.env`:
+Создайте `.env` по шаблону:
 
 ```bash
-cp .env.example .env
+# Keenable Search API Credentials
+KEENABLE_API_KEY=your_keenable_api_key
+
+# LiteLLM Proxy Configuration
+LITELLM_API_KEY=your_litellm_proxy_key
+LITELLM_BASE_URL=your_litellm_url
+MODEL_NAME=your_model_name
 ```
 
 ### Одиночный запуск
