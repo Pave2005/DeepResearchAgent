@@ -1,0 +1,50 @@
+[
+  {
+    "id": "ALCE_ASQA_-7013890438520559398",
+    "category": "multi_aspect",
+    "question": "Who has the highest goals in world football?",
+    "is_trap": false
+  },
+  {
+    "id": "ALCE_ASQA_7089015503030534342",
+    "category": "multi_aspect",
+    "question": "Who is the original artist of sound of silence?",
+    "is_trap": false
+  },
+  {
+    "id": "ALCE_ASQA_8793099883447006698",
+    "category": "multi_aspect",
+    "question": "When was the first apple i phone made?",
+    "is_trap": false
+  },
+  {
+    "id": "ALCE_ASQA_-881464876144297194",
+    "category": "multi_aspect",
+    "question": "Who played the weasley brothers in harry potter?",
+    "is_trap": false
+  },
+  {
+    "id": "FRESHQA_0001",
+    "category": "false_premise",
+    "question": "What is the name of the first animal to land on the moon?",
+    "is_trap": true
+  },
+  {
+    "id": "FRESHQA_0002",
+    "category": "false_premise",
+    "question": "What is the name of Leonardo DiCaprio's third child?",
+    "is_trap": true
+  },
+  {
+    "id": "FRESHQA_0125",
+    "category": "slow-changing",
+    "question": "How many children does Leonardo DiCaprio have?",
+    "is_trap": false
+  },
+  {
+    "id": "FRESHQA_0126",
+    "category": "slow-changing",
+    "question": "How many humans have landed on Mars?",
+    "is_trap": false
+  }
+]

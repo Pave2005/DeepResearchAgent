@@ -1,0 +1,112 @@
+{
+  "run_id": "20261001_005303",
+  "model": "qwen/qwen3.8-27B-fp8",
+  "total_tests": 8,
+  "overall_passed_calibration": 8,
+  "results": [
+    {
+      "test_id": "ALCE_ASQA_-7013890438520559398",
+      "category": "multi_aspect",
+      "question": "Who has the highest goals in world football?",
+      "system_confidence": 0.807,
+      "citation_precision": 0.857,
+      "citation_recall": 1.0,
+      "total_statements": 5,
+      "cited_statements": 5,
+      "verified_citations": 6,
+      "is_trap": false,
+      "passed_calibration": true
+    },
+    {
+      "test_id": "ALCE_ASQA_7089015503030534342",
+      "category": "multi_aspect",
+      "question": "Who is the original artist of sound of silence?",
+      "system_confidence": 0.99,
+      "citation_precision": 1.0,
+      "citation_recall": 1.0,
+      "total_statements": 2,
+      "cited_statements": 2,
+      "verified_citations": 18,
+      "is_trap": false,
+      "passed_calibration": true
+    },
+    {
+      "test_id": "ALCE_ASQA_8793099883447006698",
+      "category": "multi_aspect",
+      "question": "When was the first apple i phone made?",
+      "system_confidence": 0.888,
+      "citation_precision": 0.929,
+      "citation_recall": 1.0,
+      "total_statements": 4,
+      "cited_statements": 4,
+      "verified_citations": 13,
+      "is_trap": false,
+      "passed_calibration": true
+    },
+    {
+      "test_id": "ALCE_ASQA_-881464876144297194",
+      "category": "multi_aspect",
+      "question": "Who played the weasley brothers in harry potter?",
+      "system_confidence": 0.955,
+      "citation_precision": 1.0,
+      "citation_recall": 1.0,
+      "total_statements": 5,
+      "cited_statements": 5,
+      "verified_citations": 14,
+      "is_trap": false,
+      "passed_calibration": true
+    },
+    {
+      "test_id": "FRESHQA_0001",
+      "category": "false_premise",
+      "question": "What is the name of the first animal to land on the moon?",
+      "system_confidence": 0.212,
+      "citation_precision": 0.588,
+      "citation_recall": 1.0,
+      "total_statements": 7,
+      "cited_statements": 7,
+      "verified_citations": 10,
+      "is_trap": true,
+      "passed_calibration": true
+    },
+    {
+      "test_id": "FRESHQA_0002",
+      "category": "false_premise",
+      "question": "What is the name of Leonardo DiCaprio's third child?",
+      "system_confidence": 0.202,
+      "citation_precision": 1.0,
+      "citation_recall": 1.0,
+      "total_statements": 6,
+      "cited_statements": 6,
+      "verified_citations": 10,
+      "is_trap": true,
+      "passed_calibration": true
+    },
+    {
+      "test_id": "FRESHQA_0125",
+      "category": "slow-changing",
+      "question": "How many children does Leonardo DiCaprio have?",
+      "system_confidence": 0.802,
+      "citation_precision": 1.0,
+      "citation_recall": 1.0,
+      "total_statements": 5,
+      "cited_statements": 5,
+      "verified_citations": 8,
+      "is_trap": false,
+      "passed_calibration": true
+    },
+    {
+      "test_id": "FRESHQA_0126",
+      "category": "slow-changing",
+      "question": "How many humans have landed on Mars?",
+      "system_confidence": 0.87,
+      "citation_precision": 1.0,
+      "citation_recall": 1.0,
+      "total_statements": 1,
+      "cited_statements": 1,
+      "verified_citations": 9,
+      "is_trap": false,
+      "passed_calibration": true
+    }
+  ]
+}
