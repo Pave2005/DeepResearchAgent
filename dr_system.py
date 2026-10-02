@@ -647,15 +647,24 @@ class DeepResearchOrchestrator:
 async def main():
     KEENABLE_API_KEY = os.getenv("KEENABLE_API_KEY", "")
     LITELLM_API_KEY = os.getenv("LITELLM_API_KEY", "")
-    LITELLM_BASE_URL = os.getenv("LITELLM_BASE_URL", "")
+    LITELLM_BASE_URL = os.getenv("LITELLM_BASE_URL", "").rstrip("/")
     MODEL_NAME = os.getenv("MODEL_NAME", "")
 
-    if not KEENABLE_API_KEY or not LITELLM_API_KEY:
+    required_vars = {
+        "KEENABLE_API_KEY": KEENABLE_API_KEY,
+        "LITELLM_API_KEY": LITELLM_API_KEY,
+        "LITELLM_BASE_URL": LITELLM_BASE_URL,
+        "MODEL_NAME": MODEL_NAME,
+    }
+    missing_vars = [name for name, value in required_vars.items() if not value]
+
+    if missing_vars:
         logger.error(
-            "Missing credentials! Please set KEENABLE_API_KEY and LITELLM_API_KEY "
-            "environment variables before running."
+            f"Missing required environment variables: {', '.join(missing_vars)}! "
+            "Please configure them in your .env file before running."
         )
         return
+
 
     orchestrator = DeepResearchOrchestrator(
         keenable_key=KEENABLE_API_KEY,
